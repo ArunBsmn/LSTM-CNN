@@ -54,7 +54,7 @@ All scripts live under `Code/` and are intentionally flat within it — all impo
 Two imagined-speech EEG benchmarks are supported.
 
 **KARAOne**
-Five binary classification tasks (B1--B5) and an 11-class multi-class (MC) task. Preprocessing consists of ICA-based artefact removal followed by downsampling to 256 Hz. Raw `.csv` files are expected under a single root directory; `core_loaders.py` resolves the session subfolder layout automatically. [KARAOne Dataset](https://doi.org/10.3389/fnins.2015.00090)
+Five binary classification tasks (B1--B5) and an 11-class multi-class (MC) task. Preprocessing consists of ICA-based artefact removal followed by downsampling to 256 Hz. Raw `.csv` files are expected under a single root directory; `core_loaders.py` resolves the session subfolder layout automatically. [KARAOne Dataset](https://doi.org/10.1109/ICASSP.2015.7178118)
 
 **ASU Speech Imagery Dataset**
 Four subtasks (N1--N4) covering long words, short words, vowels, and mixed word pairs (2-class and 3-class). Preprocessing additionally includes a bandpass filter from 8--70 Hz and a notch filter at 60 Hz prior to ICA and downsampling. Raw `.csv` files are expected under a single root directory. [ASU Dataset](https://doi.org/10.1088/1741-2552/aa8235)
